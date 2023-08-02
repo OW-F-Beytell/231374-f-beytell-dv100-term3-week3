@@ -1,26 +1,131 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>DV 100: Class 3</title>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Plant Shop</title>
     
-        
-        <!-- jquery -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="scripts/main.js"></script>
     
-        <!-- external css and javascript-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-        
-        <!-- internal css and javascript-->
-        <link rel="stylesheet" href="/styling/main.css">
-        <script src="/scripts/index.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="styling/main.css">
+  </head>
+  <body>
     
-    </head>
-<body>
-    <h1>Manchester United</h1>
 
-    <button id="test">Click Here</button>
-</body>
+    <nav class="navbar fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="assets/Logo.svg" alt="Logo" height="32">
+        </a>
+        
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="browse.html">Browse</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="wishlist.html">Wishlist</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+
+    <div id="carouselExample" class="carousel carousel-dark slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="container">
+            <div class="row full-height">
+              <div class="col align-self-center">
+                <h1>Elevate Your Environment with Everlasting Beauty</h1>
+                <button class="mt-4">Browse Plants</button>
+              </div>
+              <div class="col align-self-end">
+                <img src="assets/hero-image.png" class="hero-image" id="hero-image">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item full-height">
+          <div class="container-fluid" style="margin: 0 auto; max-width: 80%;">
+            <div class="accordBlock" style="margin-top: 70px;">
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Where To Find Us
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <p>Evergreen's virtual doors are always open. You can browse our vast selection of plants, pots, and gardening essentials from the comfort of your home. Our website is designed to provide you with a seamless shopping experience, where you can explore various categories, read plant care guides, and add your favorite green companions to the cart.</p>
+                      <p>Follow us on social media to stay connected and be the first to know about exciting plant arrivals, exclusive promotions, and gardening tips. You can find us on Facebook, Instagram, and Twitter under the handle @EvergreenPlants.
+                      <br>We believe in fostering a sense of community, and your feedback is essential to us. Feel free to reach out through our website's contact form or drop us an email at support@evergreenplants.com. Our customer support team is always ready to assist you with any inquiries or concerns you may have.</p>
+                      <p>If you prefer a more personal touch, you can also visit our physical store, located at 123 Greenway Street, Knysna. Step inside and immerse yourself in a green wonderland, where you can touch, feel, and smell the beauty of our diverse plant collection. Our knowledgeable staff will be thrilled to help you find the perfect plants for your home or office.</p>
+                      <p>Join the Evergreen community today and let's nurture a world full of evergreen wonders together.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      About Us
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <p>At Evergreen, we are passionate about bringing the natural wonders of the plant world to your doorstep. Our mission is simple: to help you embrace the serenity and joy that plants bring into your life.</p>
+                      <p>Founded with a love for nature and a commitment to sustainable practices, Evergreen is more than just an online plant store. We are a community of plant enthusiasts, gardeners, and nature lovers who believe that a touch of green can transform any space into a tranquil oasis. Our team of expert horticulturists and plant enthusiasts is dedicated to curating a wide variety of premium quality plants, ensuring that each plant finds its perfect home.</p>
+                      <p>From vibrant succulents to elegant indoor trees and everything in between, we have carefully selected each plant to add life, color, and fresh air to your living spaces. Whether you're a seasoned plant parent or just starting your green journey, we have the right plants and the expertise to guide you every step of the way.</p>
+                      <p>Join us at Evergreen and let's cultivate a greener world together.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Frequently Asked Questions
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <p><strong>How do I care for my plants?</strong>
+                      <br>We understand that keeping your plants healthy is essential. To help you become a green thumb, we provide detailed care instructions for each plant on its product page. Additionally, our blog features valuable tips and articles on plant care, watering schedules, and more.</p>
+                      <p><strong>What payment methods do you accept?</strong>
+                      <br>We accept major credit cards, including Visa, Mastercard, and Discovery. You can also use PayPal for a secure and convenient payment experience.</p>
+                      <p><strong>Do you offer international shipping?</strong>
+                      <br>As of now, we only offer shipping within South Africa. We hope to expand our reach internationally in the future, so stay tuned!</p>
+                      <p><strong>What is your return policy?</strong>
+                      <br>We take pride in the quality of our plants and ensure they are in perfect condition when they leave our nursery. If your plant arrives damaged or doesn't meet your expectations, please contact our customer support within 7 days of delivery. We'll be happy to assist you with returns or exchanges.</p>
+                      <p><strong>How do you ensure the plants' safety during shipping?</strong>
+                      <br>To guarantee that your plants arrive safe and sound, we employ robust packaging methods that secure each plant in place and protect them from any damage during transit.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    
+  </body>
 </html>
