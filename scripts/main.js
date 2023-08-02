@@ -56,9 +56,22 @@ const plants = [
       }
   }
   
-  $("#removeButton").on('click', function(){
-    $(this).closest('tr').hide();
+  $("#removeButton1").on('click', function(){
+    $(this).closest('#plantCell').hide();
   });
+  $("#removeButton2").on('click', function(){
+    $(this).closest('#plantCell').hide();
+  });
+  $("#removeButton3").on('click', function(){
+    $(this).closest('#plantCell').hide();
+  });
+  $("#removeButton4").on('click', function(){
+    $(this).closest('#plantCell').hide();
+  });
+  $("#removeButton5").on('click', function(){
+    $(this).closest('#plantCell').hide();
+  });
+  
 
   $("#plantsContainer").on('click', '.card', function(){
     $(this).find("#priceText").toggle();
